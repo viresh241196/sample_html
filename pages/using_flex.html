@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<title>Example</title>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  h1 {
+    font-size: 60px;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    color: #00539f;
+    text-shadow: 3px 3px 1px black;
+  }
+  p,
+  li {
+    font-size: size 18px;
+    line-height: 2;
+    letter-spacing: 1px;
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+  }
+  #main {
+    display: flex;
+    flex: 1;
+  }
+  #main > article {
+    flex: 1;
+    order: 1;
+  }
+  #main > nav {
+    background: #d7e8d4;
+    order: 3;
+    flex: 0 0 20vw;
+  }
+  #main > aside {
+    background: beige;
+    order: 2;
+    flex: 0 0 20vw;
+  }
+  header,
+  footer {
+    background: yellowgreen;
+    height: 20vh;
+  }
+  header,
+  footer,
+  article,
+  nav,
+  aside {
+    padding: 1em;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    max-height: 200vh;
+  }
+  .card {
+    width: 200px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  }
+  .card img {
+    max-width: 100%;
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .cards img {
+    margin: 10px;
+    border: 3px solid #000;
+    box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
+    max-width: 11vw;
+  }
+  .card .text {
+    padding: 0 20px 20px;
+  }
+  .card .text > button {
+    background: gray;
+    border: 0;
+    color: white;
+    padding: 10px;
+    width: 100%;
+  }
+</style>
+<body>
+  <header><h1>To Bridgelabz</h1></header>
+  <div id="main">
+    <article>
+      <p>
+        See what employees say it's like to work at BridgeLabz Solutions.
+        Salaries, reviews, and more - all posted by employees working at
+        BridgeLabz Solutions.
+      </p>
+    </article>
+    <nav>
+      <ul>
+        <li>technology</li>
+        <li>thinker</li>
+        <li>builder</li>
+      </ul>
+    </nav>
+    <aside>
+      <main class="cards">
+        <article class="card">
+          <img
+            src="..\assets\Financial_Investment_Concept.jpg"
+            alt="Sample photo"
+          />
+          <div class="text">
+            <h3>First Steps</h3>
+            <p>Follow the steps</p>
+            <button>Enroll here</button>
+          </div>
+        </article>
+      </main>
+    </aside>
+  </div>
+  <footer><p>To The Bright Future</p></footer>
+</body>
